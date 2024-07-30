@@ -78,7 +78,7 @@ div#text-btn button:hover {
 .pause-btn.transparent {
     background: transparent;
 }
-span.gold-title {
+h2.gold-title {
     font-size: 38px !important;
     margin: -10px 0;
     color: #FFC11F;
