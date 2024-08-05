@@ -1,408 +1,71 @@
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8GS2V7M176"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-8GS2V7M176");
+    </script>
+    <!-- End of Google tag -->
+    <!-- header and footer-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("../views/header_en.html");
+        $("#footer").load("../views/footer_en.html");
+        $("#services").load("../views/services_en.html");
+      });
+    </script>
+    <!-- end of header and footer-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Artificial intelligence (AI) for analyzing image and videos captured by drones for inspection of buildings, dams, and agriculture."
+    />
+    <meta
+      name="keywords"
+      content="drone, AI, Artificial intelligence, aerial, inspection, dam, building, agriculture, GImage, Amir Mardan, photogrammetry, aerial imagery, image analysis, video analysis, real estate image"
+    />
+    <meta name="author" content="GImage, Amir Mardan" />
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GS2V7M176"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/title.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
 
-    gtag('config', 'G-8GS2V7M176');
-  </script>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Intelligence Artificielle (IA) pour l'analyse d'images et la vidéo aérienne par drone">
-  <meta name="keywords"
-    content="drone, IA, Intelligence Artificielle, aérienne, inspection, barrage, batiment, agriculture">
-  <meta name="author" content="GImage, Amir Mardan">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/title.css" />
-  <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
-    rel="stylesheet" />
+    <title>GImage</title>
+  </head>
 
-  <title>GImage</title>
-</head>
+  <body>
+    <div id="header"></div>
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top py-3">
-    <div class="container-fluid">
-      <a class="navbar-brand " href="#">
-        <img src="../img/logo_small.svg" width="100" height="40" alt="Logo" class="d-inline-block logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <span style="color:red">EN</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../" style="color:blue">FR</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="#resources">Resources</a>
-            </li> -->
-          <li class="nav-item">
-            <a href="#contact_us" class="nav-link">Contact</a>
-          </li>
-        </ul>
-  </nav>
-  <header>
-    <div class="container">
-      <div class="brief-about">
-        <h1 class="hi">Drones & AI: </h1>
-        <h2 class="hi gold-title">Increasing Efficiency, Reducing Costs </h2>
-      </div>
-    </div>
-  </header>
-  <!-- services-->
-  <div id="services" class="section services">
-    <div class="container">
-      <div class="section-title text-left">
-        <!-- Intro about services-->
-        <h3 class="dark-color">Services</h3>
-        <p>
-          We offer a wide range of services to help you achieve your goals.
-          Some of the services we offer include:
-      </div>
-      <div class="row row_research">
-        <!-- Row 1 -->
-        <div class="col-md-4 col-sm-6 col-lg-4">
-          <div class="research-box">
-            <a href="#services" class="inactive-link">
-              <div class="post-thumb">
-                <div id="carouselExampleControlsInspection" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="../img/services/inspection1.webp" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/services/inspection2.webp" alt="Second slide">
-                    </div>
-                    <!-- <div class="carousel-item">
-                        <img class="d-block w-100" src="img/services/inspection3.webp" alt="Third slide">
-                      </div> -->
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControlsInspection" role="button"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControlsInspection" role="button"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  </a>
-                </div>
-              </div>
-            </a>
-            <div class="post-info">
-              <h5 class="service-title">
-                <a href="#services" class="inactive-link">
-                  Building and Infrastructure Inspection </a>
-              </h5>
-              <p>
-                An automatic and accurate inspection of buildings and infrastructure
-                using high-resolution images and AI.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--     Next service  -->
-        <div class="col-md-4 col-sm-6 col-lg-4">
-          <div class="research-box">
-            <a href="#services" class="inactive-link">
-              <div class="post-thumb">
-                <div id="carouselExampleControlsForest" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="../img/services/forestry_studies1.webp" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/services/forestry_studies2.webp" alt="Second slide">
-                    </div>
-                    <!-- <div class="carousel-item">
-                        <img class="d-block w-100" src="../img/services/inspection3.webp" alt="Third slide">
-                      </div> -->
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControlsForest" role="button"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControlsForest" role="button"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  </a>
-                </div>
-              </div>
-            </a>
-            <div class="post-info">
-              <h5 class="service-title">
-                <a href="#services" class="inactive-link">
-                  Forestry and Agricultural Studies</a>
-              </h5>
-              <p>
-                Leveraging AI and aerial-multispectral photography for detecting
-                anomalies in farms and forests.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--     Next service  -->
-        <div class="col-md-4 col-sm-6 col-lg-4">
-          <div class="research-box">
-            <a href="#services" class="inactive-link">
-              <div class="post-thumb">
-                <div id="carouselExampleControlsInfra" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="../img/services/infra1.webp" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/services/infra2.webp" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/services/infra3.webp" alt="Third slide">
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControlsInfra" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControlsInfra" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  </a>
-                </div>
-              </div>
-            </a>
-            <div class="post-info">
-              <h5 class="service-title">
-                <a href="#services" class="inactive-link">
-                  Monitoring Infrastructure </a>
-              </h5>
-              <p>
-                Fast and safe inspection of infrastructures that are not easily accessible.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--     Next service  -->
-      </div>
-      <div class="row row_research">
-        <!---------------- Row 2 --------------->
-        <div class="col-md-4 col-sm-6 col-lg-4">
-          <div class="research-box">
-            <div class="post-thumb">
-              <div id="carouselExampleControlsPhotogram" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="sketchfab-embed-wrapper">
-                      <iframe title="1re Av., Quebec" frameborder="0" allowfullscreen mozallowfullscreen="true"
-                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
-                        width="920" height="285"
-                        src="https://sketchfab.com/models/a026dae2143f430eb8e9baba10b0d996/embed?autostart=1">
-                      </iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../img/services/photogrammetry1.webp" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../img/services/photogrammetry2.webp" alt="Third slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControlsPhotogram" role="button"
-                  data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControlsPhotogram" role="button"
-                  data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-              </div>
-            </div>
-            <div class="post-info">
-              <h5 class="service-title">
-                <a href="#services" class="inactive-link">
-                  Photogrammetry
-                </a>
-              </h5>
-              <p>
-                Providing high-quality 2D and 3D maps of the area of interest.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--     Next service  -->
-        <div class="col-md-4 col-sm-6 col-lg-4">
-          <div class="research-box">
-            <a href="#services" class="inactive-link">
-              <div id="carouselExampleControlsHeat" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="../img/services/thermo1.webp" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../img/services/thermo2.webp" alt="Second slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControlsHeat" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControlsHeat" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-              </div>
-            </a>
-            <div class="post-info">
-              <h5 class="service-title">
-                <a href="#services" class="inactive-link">
-                  Thermography</a>
-              </h5>
-              <p>
-                Thermal inspection of buildings and different environments using thermal cameras.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- next service -->
-        <div class="col-md-4 col-sm-6 col-lg-4">
-          <div class="research-box">
-            <a href="#services" class="inactive-link">
-              <div id="carouselExampleControlsPhoto" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="../img/services/real_estate1.webp" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../img/services/real_estate2.webp" alt="Second slide">
-                  </div>
-                  <!-- <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/services/inspection3.webp" alt="Third slide">
-                    </div> -->
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControlsPhoto" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControlsPhoto" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-              </div>
-            </a>
-            <div class="post-info">
-              <h5 class="service-title">
-                <a href="#services" class="inactive-link">
-                  Aerial Photography</a>
-              </h5>
-              <p>
-                Aerial photography for providing an expansive perspective of the subjects of interest.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="container py-4 map">
-    <div class="row gy-4 gx-5">
-      <iframe title="activity area"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55111.08067871604!2d-71.2182857010253!3d46.82477590525643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sca!4v1650567748881!5m2!1sen!2sca"
-        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer id="contact_us" class="w-100 py-4 flex-shrink-0">
-    <div class="container py-4">
-      <div class="row gy-4 gx-5">
-        <div class="col-lg-3 col-md-6">
-          <h5 class="h1 text-white">Get in touch</h5>
-          <p class="small text-muted">
-            Thanks for visiting this website. If you want to chat about your
-            projects and collaboration, please contact us:
-            <br>
-            <a href="mailto:info@gimage.ca">
-              <img class="contact_icon" src="../img/email_icon.svg" alt="email" width="15" height="15"
-                class="d-inline-block align-top">
-              <mark class="email">
-                <strong> info@gimage.ca</strong></mark>
-            </a>
-            <br>
-            <a href="tel:+14189452044">
-              <img class="contact_icon" src="../img/phone_icon.svg" alt="phone" width="15" height="15"
-                class="d-inline-block align-top">
-              <mark class="email">
-                <strong> (418) 945-2044</strong></mark>
-            </a>
-
-          </p>
-        </div>
-        <div class="col-lg-7 col-md-6">
-          <iframe title="form" width="640px" height="480px"
-            src="https://forms.office.com/Pages/ResponsePage.aspx?id=znKrvsStp0y5_NY4oZ1gD61xPiDscFxEnV7Y4m4vP8JUNTVWNERBU1pIVVpNMjk0RTBDUTNQMUE4My4u&embed=true"
-            frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
-            allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>
-          </iframe>
-        </div>
-        <div class="col-lg-2 col-md-6">
-          <h5 class="text-white mb-3">Quick links</h5>
-          <ul class="list-unstyled text-muted">
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <!-- <li><a href="index.html">About</a></li>
-                <li><a href="#research">Research interests</a></li>
-                <li><a href="#contact_us">Get in touch</a></li> -->
-          </ul>
-
-        </div>
-        <p class="small text-muted mb-0">
-          &copy; Copyrights. All rights reserved.
-          <!-- <a class="text-primary" href="#">GImage</a> -->
-        </p>
-      </div>
-      </ul>
-    </div>
-    </div>
-    </div>
-  </footer>
-  <!-- Footer -->
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="../scripts/script.js"></script>
-  <!-- <script src="../scripts/title.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
-
+    <div id="services"></div>
+    <!--Remaining section-->
+    <div id="footer"></div>
+  </body>
 </html>
